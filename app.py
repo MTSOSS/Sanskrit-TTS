@@ -88,8 +88,7 @@ if __name__=='__main__':
     utils.load_checkpoint('model/model.pth', net_g_ms)
 
     with gr.Blocks() as app:
-        gr.Markdown('# Sanskrit Text to Speech\n'
-        '![visitor badge](https://visitor-badge.glitch.me/badge?page_id=cjangcjengh.sanskrit-tts)')
+        gr.Markdown('# Sanskrit Text to Speech\n')
         with gr.Tab('Text to Speech'):
             text_script=gr.Radio(['Devanagari','IAST','SLP1','HK'],label='Script',interactive=True,value='Devanagari')
             text_input = gr.TextArea(label='Text', placeholder='Type your text here',value=DEFAULT_TEXT)
