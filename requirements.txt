@@ -1,0 +1,8 @@
+librosa
+matplotlib
+numpy
+scipy
+tensorboard
+torch
+torchvision
+indic_transliteration
